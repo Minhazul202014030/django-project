@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import Emp
+from .models import Emp,Testimonial
 
 
 
@@ -12,3 +12,4 @@ class EmpAdmin(admin.ModelAdmin):
     list_filter=('working',)
 
 admin.site.register(Emp,EmpAdmin)
+admin.site.register(Testimonial)
